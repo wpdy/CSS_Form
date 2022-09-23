@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registarion Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="box">
-            <h1>Sukurti nauja adresa</h1>
             <form class="forma">
-                <label for="gavejas">Gavejas:</label>
+                <h1 id="pavadinimas">Sukurti naują adresą</h1>
+                <hr>
+
+                <br><label for="gavejas">Gavėjas:</label>
                 <input type="text" id="gavejas" name="gavejas"><br>
 
-                <br><label for="imone">Imone:</label>
+                <br><label for="imone">Įmonė:</label>
                 <input type="text" id="imone" name="imone"><br>
 
-                <br><label for="salis">Salis:</label>
+                <br><label for="salis">Šalis:</label>
                 <input type="text" id="salis" name="salis"><br>
 
                 <br><label for="miestas">Miestas:</label>
                 <input type="text" id="miestas" name="miestas"><br>
 
-                <br><label for="gatve">Gatve:</label>
+                <br><label for="gatve">Gatvė:</label>
                 <input type="text" id="gatve" name="gatve"><br>
 
                 <br><label for="nr">Namo nr.:</label>
@@ -33,22 +35,22 @@
                 <br><label for="bnr">Buto nr.:</label>
                 <input  type="text" id="bnr" name="bnr" placeholder="Irasykite buto Nr."><br>
 
-                <br><label for="pasto">Pasto kodas:</label>
-                <input class="pasto" type="number" id="pasto" name="pasto"><br>
+                <br><label for="pasto">Pašto kodas:</label>
+                <input class="pasto_kodas" type="number" id="pasto" name="pasto" min="1" max="5"><br>
 
-                <br><label for="tel">Gavejo mob. tel.:</label>
+                <br><label for="tel">Gavėjo mob. tel.:</label>
                 <input type="number" id="tel" name="tel"><br>
 
-                <br><label for="pastas">El. pastas:</label>
+                <br><label for="pastas">El. paštas:</label>
                 <input type="email" id="pastas" name="pastas" placeholder="Pvz. vardas.pavardenis@pastas.lt"><br>
 
                 <br><label for="katalogas">Katalogas:</label>
                 <input type="text" id="kataslogas" name="katalogas" placeholder="Pasirinkite katalogus"><br><br>
 
-                <button class="sub">Saugoti</button>
+                <button class="submit_mygtukas">SAUGOTI</button><br><br>
+                <hr>
             </form>
         </div>
     </div>
 </body>
 </html>
-
